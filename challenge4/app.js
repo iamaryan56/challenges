@@ -1,10 +1,10 @@
 const element= document.getElementsByClassName("key");
 
 let rdm=Math.floor(Math.random()*element.length); //gives a random number within our range
-function action(){
+action=()=>{
 //add jiggle class randomly
 element[rdm].classList.add("jiggle");
-document.addEventListener("keydown",function(event){
+document.addEventListener("keydown",(event)=>{
     const character= element[rdm].getAttribute("data-key");
     const characterPressed= event.key;
     
