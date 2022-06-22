@@ -15,7 +15,6 @@ const action = () => {
     ) {
       element[rdm].classList.remove('jiggle');
       rdm = Math.floor(Math.random() * element.length);
-      console.log(event.key);
       action();
     }
   });
