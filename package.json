@@ -36,9 +36,14 @@
     }
   },
   "lint-staged": {
+    "*.{js,css,html,md,yml}": [
+      "prettier --write"
+    ],
     "*.js": [
-      "eslint",
-      "prettier"
+      "eslint --fix"
+    ],
+    "*.css": [
+      "stylelint \"**/*.css\" --fix"
     ]
   },
   "dependencies": {
